@@ -1,0 +1,17 @@
+<div class="topnav" *ngIf="login">
+  <a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="home">Home</a>
+  <a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="employee">Employee</a>
+  <div class="topnav-right">
+    <a class="cursor" (click)="LogoutUser()">Logout</a>
+    <!-- <a href="#about">About</a> -->
+  </div>
+</div>
+
+<!-- <ul> -->
+  <!-- <li><a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="home">Home</a></li> -->
+  <!-- <li><a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="registry">Register</a></li> -->
+  <!-- <li><a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="employee">Employee</a></li> -->
+  <!-- <li><a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['employee']">Employee</a></li> -->
+  <!-- <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['feature']">Feature Lazy Load</a></li> -->
+<!-- </ul> -->
+<router-outlet></router-outlet>

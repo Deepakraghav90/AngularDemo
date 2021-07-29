@@ -1,0 +1,18 @@
+<form (ngSubmit)="LoginUser(ad)" #ad="ngForm" >
+
+<div class="login">
+  <h1>Login to Web App</h1>
+  <div>
+   <input type="text" ngModel name="login" value="" required placeholder="Username or Email" #aEmail="ngModel">
+    <span class="spnError" *ngIf="aEmail.errors?.required && (aEmail.touched || aEmail.dirty || ad.submitted) ">This field is required</span>
+    <!-- <span class="spnError" *ngIf="aEmail.errors?.email">
+      Please enter a valid Email.
+    </span> -->
+    <input type="password" ngModel name="password" value="" required="true" #aPwd="ngModel" placeholder="Password">
+    <span class="spnError" *ngIf="!aPwd.valid && (aPwd.touched || aPwd.dirty || ad.submitted)">This field is required</span>
+    <p class="submit">
+      <input type="submit" value="Login">
+    </p>
+  </div>
+</div>
+</form>

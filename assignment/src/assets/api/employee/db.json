@@ -1,0 +1,67 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "firstName": "Tom",
+      "lastName": "Tommy",
+      "dept": "IT",
+      "salary": "15000"
+    },
+    {
+      "firstName": "Harry",
+      "lastName": "Potter",
+      "dept": "IT",
+      "salary": 15001,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "firstName": "Bro",
+      "lastName": "Brown",
+      "dept": "IT",
+      "salary": "15000"
+    },
+    {
+      "firstName": "Deepak",
+      "lastName": "Rana",
+      "dept": "IT",
+      "salary": 25002,
+      "id": "4"
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "dept": "IT",
+      "salary": 25000,
+      "id": "5"
+    },
+    {
+      "firstName": "Deepak",
+      "lastName": "Rana",
+      "dept": "IT",
+      "salary": 90000,
+      "id": "6"
+    },
+    {
+      "id": "7",
+      "firstName": "try",
+      "lastName": "try",
+      "dept": "IT",
+      "salary": 54
+    },
+    {
+      "id": "8",
+      "firstName": "test",
+      "lastName": "test",
+      "dept": "it",
+      "salary": null
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "testuser",
+      "password": "12345"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+
+<div>
+<mat-card>
+  <!-- Title of an Card -->
+  <mat-card-title>
+    Add Employee
+  </mat-card-title>
+  <mat-card-content>
+    <form (ngSubmit)="submitForm()" [formGroup]="addEmployeeForm" >
+          <table>
+              <tr>
+                  <td>
+                      <mat-form-field class="demo-full-width">
+                        <input matInput type="text" formControlName="firstName" placeholder="First Name">
+                      </mat-form-field>
+                  </td>
+                  <td>
+                      <mat-form-field class="demo-full-width">
+                        <input matInput type="text" formControlName="lastName" placeholder="Last Name">
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <mat-form-field class="demo-full-width">
+                        <input matInput type="text" formControlName="dept" placeholder="Dept">
+                      </mat-form-field>
+                  </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                    <mat-form-field class="demo-full-width">
+                      <input matInput type="number" formControlName="salary" placeholder="Salary">
+                    </mat-form-field>
+                </td>
+            </tr>
+
+              <tr>
+                  <td colspan="2" class="content-center">
+                    <!-- <button mat-raised-button color="primary" (click)="add()" [disabled]="!loaded">Add</button> -->
+                    <button mat-raised-button color="primary" [disabled]="!loaded">Add</button>
+                  </td>
+              </tr>
+          </table>
+        </form>
+  </mat-card-content>
+</mat-card>
+</div>
+
+<!-- <mat-card >
+  <mat-card-title>
+      <div>Add Employee</div>
+  </mat-card-title>
+
+  <div class="containerAdd">
+    <p>
+      <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input matInput type="text" [(ngModel)]="employee.firstName">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input matInput type="text" [(ngModel)]="employee.lastName">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field style="width: 120px;">
+          <mat-label>Dept</mat-label>
+          <input matInput type="text" [(ngModel)]="employee.dept">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field style="width: 70px;">
+        <mat-label>Salary</mat-label>
+        <input matInput type="number" [(ngModel)]="employee.salary">
+    </mat-form-field>
+  </p>
+      <button mat-raised-button color="primary" (click)="add()" [disabled]="!loaded">Add</button>
+  </div>
+
+</mat-card> -->
