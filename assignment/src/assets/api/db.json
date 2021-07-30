@@ -25,36 +25,8 @@
       "firstName": "Deepak",
       "lastName": "Rana",
       "dept": "IT",
-      "salary": 25002,
+      "salary": 95000,
       "id": "4"
-    },
-    {
-      "firstName": "test",
-      "lastName": "test",
-      "dept": "IT",
-      "salary": 25000,
-      "id": "5"
-    },
-    {
-      "firstName": "Deepak",
-      "lastName": "Rana",
-      "dept": "IT",
-      "salary": 90000,
-      "id": "6"
-    },
-    {
-      "id": "7",
-      "firstName": "try",
-      "lastName": "try",
-      "dept": "IT",
-      "salary": 54
-    },
-    {
-      "id": "8",
-      "firstName": "test",
-      "lastName": "test",
-      "dept": "it",
-      "salary": null
     }
   ],
   "users": [

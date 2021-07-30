@@ -10,9 +10,12 @@
     </span> -->
     <input type="password" ngModel name="password" value="" required="true" #aPwd="ngModel" placeholder="Password">
     <span class="spnError" *ngIf="!aPwd.valid && (aPwd.touched || aPwd.dirty || ad.submitted)">This field is required</span>
+    <span class="spnError" *ngIf="!!loginError">{{loginError}}</span>
     <p class="submit">
       <input type="submit" value="Login">
     </p>
+    <p>Try Username : testuser and Paswrod : 12345</p>
+
   </div>
 </div>
 </form>
